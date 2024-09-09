@@ -4,6 +4,9 @@ body {
 p {
   color: rgb(78, 78, 78);
 }
+img:not(.item-1 img, .carousel-1 img) {
+  width: 100%;
+}
 nav li a::before {
   content: "";
   margin-top: 7px;
@@ -81,7 +84,7 @@ header p {
   transform: translateX(-50%);
   background-color: rgb(13, 110, 253);
 }
-#services .item i{
+#services .item i {
   border: 10px rgb(13, 110, 253) solid;
   border-radius: 50%;
   padding: 27px;
@@ -96,10 +99,13 @@ header p {
   color: white;
 }
 .img {
-  background-image: linear-gradient(rgba(13, 109, 253, 0.732), rgba(13, 109, 253, 0.732)),
-  url(img/counters-bg.jpg);
-height: 60vh;
-width: 100%;
+  background-image: linear-gradient(
+      rgba(13, 109, 253, 0.732),
+      rgba(13, 109, 253, 0.732)
+    ),
+    url(img/counters-bg.jpg);
+  height: 60vh;
+  width: 100%;
 }
 .img i {
   border: 10px rgb(205, 225, 248) solid;
@@ -107,6 +113,38 @@ width: 100%;
   padding: 27px;
   margin-bottom: 11px;
 }
+.foot a {
+  border-radius: 50%;
+}
+.text h6 {
+  color: rgb(78, 78, 78);
+  font-size: 13px;
+}
+.text span {
+  color: rgb(0, 120, 255);
+}
+.item-3 .item .image {
+  overflow: hidden;
+}
+.item-3 img {
+  transition: scale 1.2s;
+}
+.item-3 .item:hover img {
+  scale: 1.5;
+}
+.carousel-1 {
+  background-image: linear-gradient(
+      rgba(13, 109, 253, 0.732),
+      rgba(13, 109, 253, 0.732)
+    ),
+    url(img/overlay-bg.jpg);
+  height: 80vh;
+  width: 100%;
+}
+/* .carousel {
+  height: 80vh;
+  width: 100%;
+} */
 @media (max-width: 576px) {
   .img {
     height: 150vh;
