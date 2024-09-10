@@ -4,7 +4,7 @@ body {
 p {
   color: rgb(78, 78, 78);
 }
-img:not(.item-1 img, .carousel-1 img) {
+img:not(.item-1 img, .carousel-1 img, .foot-1 img) {
   width: 100%;
 }
 nav li a::before {
@@ -140,11 +140,59 @@ header p {
     url(img/overlay-bg.jpg);
   height: 80vh;
   width: 100%;
+  position: relative;
+}
+.carousel {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 /* .carousel {
   height: 80vh;
   width: 100%;
 } */
+.carousel-indicators [data-bs-target] {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.item-4 a {
+  text-decoration: none;
+  color: rgb(19, 19, 19);
+  margin-top: 7px;
+  margin-left: 7px;
+  transition: all .7s;
+}
+.item-4 .item .foot-x{
+  border: rgb(167, 163, 163) solid 1px;
+  border-top: 0;
+}
+.foot-x h4, .foot-x p , .foot-x .foot-1{
+  padding-left: 12px;
+
+}
+.left-1 p {
+  margin-top: 11px;
+  margin-right: 7px;
+}
+.foot-1 {
+  border-top: rgb(167, 163, 163) solid 1px;
+}
+.item-4 a:hover {
+  color: rgb(13, 110, 253);
+}
+.mid {
+  position: absolute;
+  top: 100%;
+  background-color: rgb(13, 110, 253);
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.mid h6 {
+  font-size: 11px;
+  color: white;
+  margin: 0;
+}
 @media (max-width: 576px) {
   .img {
     height: 150vh;
