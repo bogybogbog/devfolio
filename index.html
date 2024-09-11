@@ -8,8 +8,8 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <title>Devfolio</title>
   </head>
-  <body>
-    <nav
+  <body data-bs-spy="scroll" data-bs-target="#bog">
+    <nav id="bog"
       class="navbar navbar-expand-lg container-fluid px-5 position-fixed z-3"
       data-bs-theme="dark"
       style="background-color: rgb(0, 0, 0, 0.65)"
@@ -32,13 +32,18 @@
             class="navbar-nav ms-auto mb-2 mb-lg-0 me-5 gap-3 text-uppercase fw-medium"
           >
             <li class="nav-item position-relative">
-              <a class="nav-link active" aria-current="page" href="#home"
+              <a class="nav-link active" aria-current="page" href="#All"
                 >Home</a
               >
             </li>
             <li class="nav-item position-relative">
               <a class="nav-link active" aria-current="page" href="#about"
                 >about</a
+              >
+            </li>
+            <li class="nav-item position-relative">
+              <a class="nav-link active" aria-current="page" href="#portofolio"
+                >portofolio</a
               >
             </li>
             <li class="nav-item position-relative">
@@ -56,25 +61,6 @@
                 >blog</a
               >
             </li>
-            <li class="nav-item dropdown position-relative">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
             <li class="nav-item position-relative">
               <a class="nav-link active" aria-current="page" href="#contact"
                 >contact</a
@@ -88,8 +74,8 @@
       id="home"
       class="bg-img d-flex flex-column justify-content-center align-items-center text-center"
     >
-      <h1>I am Ahmed Mahmoud</h1>
-      <p>Wep De7k</p>
+      <h1 class="px-md-0 px-2">I am Ahmed Mahmoud</h1>
+      <p class="px-md-0 px-2">I'M</p>
     </header>
     <main>
       <div class="container my-5">
@@ -219,6 +205,368 @@
               lacinia in, elementum id enim. Nulla porttitor accumsan tincidunt.
               Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
             </p>
+          </div>
+        </div>
+        <div class="pottofolio my-5" id="portofolio">
+          <div class="content text-center my-5">
+            <h1 class="text-uppercase mt-5 mb-3">portofolio</h1>
+            <p class="position-relative">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="All-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#All-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="All-tab-pane"
+                aria-selected="true"
+              >
+                All
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="seo-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#seo-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="seo-tab-pane"
+                aria-selected="false"
+              >
+                Seo
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="webdesgin-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#webdesgin-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="webdesgin-tab-pane"
+                aria-selected="false"
+              >
+                Webdesgin
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="wordpass-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#wordpass-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="wordpass-tab-pane"
+                aria-selected="false"
+              >
+                Wordpass
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="work-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#work-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="work-tab-pane"
+                aria-selected="false"
+              >
+                Work
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div
+              class="tab-pane fade show active"
+              id="All-tab-pane"
+              role="tabpanel"
+              aria-labelledby="All-tab"
+              tabindex="0"
+            >
+              <div class="container my-5">
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 py-3">
+                    <div class="item position-relative">
+                      <img src="css/img/1.jpg" alt="" />
+                      <div
+                        class="layer position-absolute d-flex flex-column justify-content-center align-items-center text-white"
+                      >
+                        <h2>category</h2>
+                        <h4>project tite</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 py-3">
+                    <div class="item position-relative">
+                      <img src="css/img/2.jpg" alt="" />
+                      <div
+                        class="layer position-absolute d-flex flex-column justify-content-center align-items-center text-white"
+                      >
+                        <h2>category</h2>
+                        <h4>project tite</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 py-3">
+                    <div class="item position-relative">
+                      <img src="css/img/3.jpg" alt="" />
+                      <div
+                        class="layer position-absolute d-flex flex-column justify-content-center align-items-center text-white"
+                      >
+                        <h2>category</h2>
+                        <h4>project tite</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 py-3">
+                    <div class="item position-relative">
+                      <img src="css/img/4.jpg" alt="" />
+                      <div
+                        class="layer position-absolute d-flex flex-column justify-content-center align-items-center text-white"
+                      >
+                        <h2>category</h2>
+                        <h4>project tite</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 py-3">
+                    <div class="item position-relative">
+                      <img src="css/img/5.jpg" alt="" />
+                      <div
+                        class="layer position-absolute d-flex flex-column justify-content-center align-items-center text-white"
+                      >
+                        <h2>category</h2>
+                        <h4>project tite</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 py-3">
+                    <div class="item position-relative">
+                      <img src="css/img/6.jpg" alt="" />
+                      <div
+                        class="layer position-absolute d-flex flex-column justify-content-center align-items-center text-white"
+                      >
+                        <h2>category</h2>
+                        <h4>project tite</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="seo-tab-pane"
+              role="tabpanel"
+              aria-labelledby="seo-tab"
+              tabindex="0"
+            >
+            <div class="container my-5">
+              <div class="row">
+                <div class="col-lg-4 col-md-6 py-3">
+                  <div class="item position-relative">
+                    <img src="css/img/1.jpg" alt="" />
+                    <div
+                      class="layer position-absolute d-flex flex-column justify-content-center align-items-center text-white"
+                    >
+                      <h2>category</h2>
+                      <h4>project tite</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 py-3">
+                  <div class="item position-relative">
+                    <img src="css/img/2.jpg" alt="" />
+                    <div
+                      class="layer position-absolute d-flex flex-column justify-content-center align-items-center text-white"
+                    >
+                      <h2>category</h2>
+                      <h4>project tite</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 py-3">
+                  <div class="item position-relative">
+                    <img src="css/img/3.jpg" alt="" />
+                    <div
+                      class="layer position-absolute d-flex flex-column justify-content-center align-items-center text-white"
+                    >
+                      <h2>category</h2>
+                      <h4>project tite</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 py-3">
+                  <div class="item position-relative">
+                    <img src="css/img/4.jpg" alt="" />
+                    <div
+                      class="layer position-absolute d-flex flex-column justify-content-center align-items-center text-white"
+                    >
+                      <h2>category</h2>
+                      <h4>project tite</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 py-3">
+                  <div class="item position-relative">
+                    <img src="css/img/6.jpg" alt="" />
+                    <div
+                      class="layer position-absolute d-flex flex-column justify-content-center align-items-center text-white"
+                    >
+                      <h2>category</h2>
+                      <h4>project tite</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="webdesgin-tab-pane"
+              role="tabpanel"
+              aria-labelledby="webdesgin-tab"
+              tabindex="0"
+            >
+              <div class="container my-5">
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 py-3">
+                    <div class="item position-relative">
+                      <img src="css/img/3.jpg" alt="" />
+                      <div
+                        class="layer position-absolute d-flex flex-column justify-content-center align-items-center text-white"
+                      >
+                        <h2>category</h2>
+                        <h4>project tite</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 py-3">
+                    <div class="item position-relative">
+                      <img src="css/img/4.jpg" alt="" />
+                      <div
+                        class="layer position-absolute d-flex flex-column justify-content-center align-items-center text-white"
+                      >
+                        <h2>category</h2>
+                        <h4>project tite</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 py-3">
+                    <div class="item position-relative">
+                      <img src="css/img/6.jpg" alt="" />
+                      <div
+                        class="layer position-absolute d-flex flex-column justify-content-center align-items-center text-white"
+                      >
+                        <h2>category</h2>
+                        <h4>project tite</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="wordpass-tab-pane"
+              role="tabpanel"
+              aria-labelledby="wordpass-tab"
+              tabindex="0"
+            >
+              <div class="container my-5">
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 py-3">
+                    <div class="item position-relative">
+                      <img src="css/img/1.jpg" alt="" />
+                      <div
+                        class="layer position-absolute d-flex flex-column justify-content-center align-items-center text-white"
+                      >
+                        <h2>category</h2>
+                        <h4>project tite</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 py-3">
+                    <div class="item position-relative">
+                      <img src="css/img/2.jpg" alt="" />
+                      <div
+                        class="layer position-absolute d-flex flex-column justify-content-center align-items-center text-white"
+                      >
+                        <h2>category</h2>
+                        <h4>project tite</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 py-3">
+                    <div class="item position-relative">
+                      <img src="css/img/5.jpg" alt="" />
+                      <div
+                        class="layer position-absolute d-flex flex-column justify-content-center align-items-center text-white"
+                      >
+                        <h2>category</h2>
+                        <h4>project tite</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 py-3">
+                    <div class="item position-relative">
+                      <img src="css/img/6.jpg" alt="" />
+                      <div
+                        class="layer position-absolute d-flex flex-column justify-content-center align-items-center text-white"
+                      >
+                        <h2>category</h2>
+                        <h4>project tite</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="work-tab-pane"
+              role="tabpanel"
+              aria-labelledby="work-tab"
+              tabindex="0"
+            >
+              <div class="container my-5">
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 py-3">
+                    <div class="item position-relative">
+                      <img src="css/img/5.jpg" alt="" />
+                      <div
+                        class="layer position-absolute d-flex flex-column justify-content-center align-items-center text-white"
+                      >
+                        <h2>category</h2>
+                        <h4>project tite</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 py-3">
+                    <div class="item position-relative">
+                      <img src="css/img/6.jpg" alt="" />
+                      <div
+                        class="layer position-absolute d-flex flex-column justify-content-center align-items-center text-white"
+                      >
+                        <h2>category</h2>
+                        <h4>project tite</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div id="services" class="row">
