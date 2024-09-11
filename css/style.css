@@ -47,51 +47,133 @@ header p {
   color: white;
 }
 header p::after {
-  content: '';
+  content: "";
   animation: header-animation 4s infinite;
 }
 @keyframes header-animation {
-  0% {content: "|";}
-  3% {content: "D|";}
-  5% {content: "De|";}
-  7% {content: "Dev|";}
-  10% {content: "Deve|";}
-  13% {content: "Devel|";}
-  15% {content: "Develo|";}
-  17% {content: "Develop|";}
-  20% {content: "Developm|";}
-  24% {content: "Developme|";}
-  25% {content: "Developmen|";}
-  27% {content: "Development|";}
-  30% {content: "Development|";}
-  32% {content: "Developmen|";}
-  35% {content: "Developme|";}
-  37% {content: "Develop|";}
-  40% {content: "Develo|";}
-  42% {content: "Devel|";}
-  45% {content: "Deve|";}
-  47% {content: "Dev|";}
-  50% {content: "De|";}
-  52% {content: "Des|";}
-  55% {content: "Desi|";}
-  57% {content: "Desig|";}
-  60% {content: "Design|";}
-  62% {content: "Designe|";}
-  65% {content: "Designer|";}
-  67% {content: "Designer|";}
-  70% {content: "Designe|";}
-  72% {content: "Design|";}
-  75% {content: "Desig|";}
-  77% {content: "Desi|";}
-  80% {content: "Des|";}
-  82% {content: "De|";}
-  85% {content: "Dev|";}
-  87% {content: "Deve|";}
-  90% {content: "Devel|";}
-  92% {content: "Develo|";}
-  95% {content: "Develop|";}
-  97% {content: "Develope|";}
-  100% {content: "Developer|";}
+  0% {
+    content: "|";
+  }
+  3% {
+    content: "D|";
+  }
+  5% {
+    content: "De|";
+  }
+  7% {
+    content: "Dev|";
+  }
+  10% {
+    content: "Deve|";
+  }
+  13% {
+    content: "Devel|";
+  }
+  15% {
+    content: "Develo|";
+  }
+  17% {
+    content: "Develop|";
+  }
+  20% {
+    content: "Developm|";
+  }
+  24% {
+    content: "Developme|";
+  }
+  25% {
+    content: "Developmen|";
+  }
+  27% {
+    content: "Development|";
+  }
+  30% {
+    content: "Development|";
+  }
+  32% {
+    content: "Developmen|";
+  }
+  35% {
+    content: "Developme|";
+  }
+  37% {
+    content: "Develop|";
+  }
+  40% {
+    content: "Develo|";
+  }
+  42% {
+    content: "Devel|";
+  }
+  45% {
+    content: "Deve|";
+  }
+  47% {
+    content: "Dev|";
+  }
+  50% {
+    content: "De|";
+  }
+  52% {
+    content: "Des|";
+  }
+  55% {
+    content: "Desi|";
+  }
+  57% {
+    content: "Desig|";
+  }
+  60% {
+    content: "Design|";
+  }
+  62% {
+    content: "Designe|";
+  }
+  65% {
+    content: "Designer|";
+  }
+  67% {
+    content: "Designer|";
+  }
+  70% {
+    content: "Designe|";
+  }
+  72% {
+    content: "Design|";
+  }
+  75% {
+    content: "Desig|";
+  }
+  77% {
+    content: "Desi|";
+  }
+  80% {
+    content: "Des|";
+  }
+  82% {
+    content: "De|";
+  }
+  85% {
+    content: "Dev|";
+  }
+  87% {
+    content: "Deve|";
+  }
+  90% {
+    content: "Devel|";
+  }
+  92% {
+    content: "Develo|";
+  }
+  95% {
+    content: "Develop|";
+  }
+  97% {
+    content: "Develope|";
+  }
+  100% {
+    content: "Developer|";
+  }
 }
 .item-1 span {
   font-size: 16px;
@@ -138,10 +220,10 @@ header p::after {
   display: flex;
   justify-content: center;
   border: none;
-} 
+}
 .nav-tabs .nav-link.active {
   color: white;
-  background-color:rgb(13, 110, 253);
+  background-color: rgb(13, 110, 253);
   border-color: transparent;
   border-radius: 40%;
 }
@@ -151,15 +233,15 @@ header p::after {
 }
 .pottofolio .item {
   overflow: hidden;
-} 
+}
 .pottofolio .item img {
-  transition: all .3s;
+  transition: all 0.3s;
 }
 .pottofolio .item:hover img {
   scale: 1.4;
 }
 .pottofolio .item::after {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   background-color: rgb(0, 0, 0);
@@ -167,19 +249,18 @@ header p::after {
   top: 0;
   left: 0;
   opacity: 0;
-  transition: all .6s;
+  transition: all 0.6s;
 }
 .pottofolio .item:hover::after {
-  opacity: .6;
+  opacity: 0.6;
 }
 .layer {
   top: 120%;
   left: 0;
   width: 100%;
   height: 100%;
-  transition: top .5s;
+  transition: top 0.5s;
   z-index: 2;
-
 }
 .pottofolio .item:hover .layer {
   top: 0;
@@ -198,7 +279,7 @@ header p::after {
   border-color: rgb(205, 225, 248);
   color: white;
 }
-.img{
+.img {
   background-image: linear-gradient(
       rgba(13, 109, 253, 0.732),
       rgba(13, 109, 253, 0.732)
@@ -261,15 +342,16 @@ header p::after {
   color: rgb(19, 19, 19);
   margin-top: 7px;
   margin-left: 7px;
-  transition: all .7s;
+  transition: all 0.7s;
 }
-.item-4 .item .foot-x{
+.item-4 .item .foot-x {
   border: rgb(167, 163, 163) solid 1px;
   border-top: 0;
 }
-.foot-x h4, .foot-x p , .foot-x .foot-1{
+.foot-x h4,
+.foot-x p,
+.foot-x .foot-1 {
   padding-left: 12px;
-
 }
 .left-1 p {
   margin-top: 11px;
@@ -286,21 +368,22 @@ header p::after {
   top: 100%;
   background-color: rgb(13, 110, 253);
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 .mid h6 {
   font-size: 11px;
   color: white;
   margin: 0;
 }
-input, textarea {
+input,
+textarea {
   border: 2px solid rgb(231, 221, 221);
-  transition: border-color .4s;
+  transition: border-color 0.4s;
 }
 :is(input, textarea):focus {
   outline: none;
- border-color: rgb(13, 110, 253); 
-} 
+  border-color: rgb(13, 110, 253);
+}
 textarea {
   resize: vertical;
   max-height: 250px;
@@ -319,21 +402,20 @@ textarea {
 }
 .foot-5 {
   background-image: linear-gradient(
-    rgba(13, 109, 253, 0.732),
-    rgba(13, 109, 253, 0.732)
-  ),
-  url(img/overlay-bg.jpg);
-height: 140vh;
-width: 100%;
-padding-top: 200px;
+      rgba(13, 109, 253, 0.732),
+      rgba(13, 109, 253, 0.732)
+    ),
+    url(img/overlay-bg.jpg);
+  height: 140vh;
+  width: 100%;
+  padding-top: 200px;
 }
 @media (max-width: 576px) {
   .img {
     height: 150vh;
   }
   .foot-5 {
-    height: 200vh;
+    height: 190vh;
     padding-inline: 20px;
   }
 }
-
